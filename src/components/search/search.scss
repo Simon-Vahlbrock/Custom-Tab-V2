@@ -1,9 +1,5 @@
 .search {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  height: 100vh;
-  width: 100vw;
+padding-top: 35vh;
 
   &__table-wrapper {
     width: 425px;
@@ -49,5 +45,5 @@
 }
 
 .style-fix{
-  padding-top: 40vh;
+  //padding-top: 40vh;
 }

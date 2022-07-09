@@ -1,6 +1,14 @@
 .bookmark {
+  position: relative;
+
   &__folder-name{
     display: flex;
     gap: 4px;
+  }
+
+  &__books {
+    position: absolute;
+    padding: 6px;
+    background-color: rgb(23, 23, 23);
   }
 }

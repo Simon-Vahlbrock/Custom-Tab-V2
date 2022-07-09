@@ -9,7 +9,6 @@ const App: FC = () => {
         <div className='app'>
             <Bookmarks/>
             <Background/>
-            <Search/>
         </div>
     ), [])
 }
