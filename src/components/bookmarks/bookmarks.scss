@@ -1,0 +1,11 @@
+.bookmarks {
+  background-color: rgb(23, 23, 23);
+  width: calc(100% - 12px);
+  padding: 6px;
+
+  font-size: 0.8rem;
+  color: white;
+
+  display: flex;
+  flex: 0 1 auto;
+}

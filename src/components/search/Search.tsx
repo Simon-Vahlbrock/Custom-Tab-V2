@@ -25,30 +25,32 @@ const Search:FC = () => {
 
     return useMemo(() => (
         <div className="search">
-            <div className="search__table-wrapper">
-                <table className="search__table-wrapper__table">
-                    <tr>
-                        <td>
-                            <input
-                                type="text"
-                                placeholder='Search'
-                                className='search__table-wrapper__table__input'
-                                value={searchString}
-                                onChange={handleInput}
-                                onKeyDown={handleOnKeyDown}
-                                autoComplete="off"
-                            />
-                        </td>
-                        <td>
-                            <a href="#" onClick={handleSubmitClick}>
-                                <FontAwesomeIcon
-                                    className="search__table-wrapper__table__icon"
-                                    icon={faSearch}
+            <div className='style-fix'>
+                <div className="search__table-wrapper">
+                    <table className="search__table-wrapper__table">
+                        <tr>
+                            <td>
+                                <input
+                                    type="text"
+                                    placeholder='Search'
+                                    className='search__table-wrapper__table__input'
+                                    value={searchString}
+                                    onChange={handleInput}
+                                    onKeyDown={handleOnKeyDown}
+                                    autoComplete="off"
                                 />
-                            </a>
-                        </td>
-                    </tr>
-                </table>
+                            </td>
+                            <td>
+                                <a href="#" onClick={handleSubmitClick}>
+                                    <FontAwesomeIcon
+                                        className="search__table-wrapper__table__icon"
+                                        icon={faSearch}
+                                    />
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
             </div>
         </div>
     ), [handleInput, handleOnKeyDown, handleSubmitClick, searchString]);

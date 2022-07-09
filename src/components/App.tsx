@@ -1,11 +1,14 @@
 import React, {FC, useMemo} from "react";
 import './app.scss'
-import {getBackgroundImage} from "../utils/background";
+import Background from "./background/Background";
+import Bookmarks from "./bookmarks/Bookmarks";
 import Search from "./search/Search";
 
-const App:FC = () => {
+const App: FC = () => {
     return useMemo(() => (
-        <div className='app' style={{backgroundImage: getBackgroundImage()}}>
+        <div className='app'>
+            <Bookmarks/>
+            <Background/>
             <Search/>
         </div>
     ), [])
